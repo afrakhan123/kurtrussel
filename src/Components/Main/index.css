@@ -1,0 +1,126 @@
+.main-container {
+  border-radius: 10px;
+  height: 85vh;
+  width: 80vw;
+  overflow: hidden;
+  background: #eee;
+  box-shadow: 0 8px 8px -4px black;
+}
+
+.header-nav-container {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffbd69;
+}
+.items-container {
+  height: 75%;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 1.5% 0;
+}
+
+.filter-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.filter-select {
+  width: 45%;
+}
+.filter-textfield {
+  width: 58%;
+  margin-left: 20px;
+}
+.logo {
+  height: 90%;
+  border-radius: 50%;
+  margin-left: 30px;
+  mix-blend-mode: multiply;
+}
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+}
+.add-modal-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 20px 0 30px 0;
+  width: 100%;
+}
+.add-modal-select {
+  width: 100%;
+}
+.add-btn {
+  margin-right: 20px;
+}
+.no-items-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-modal-textfield {
+  width: 100%;
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  .filter-container {
+    width: 50%;
+    padding-right: 0;
+    height: 100%;
+    padding-bottom: 10px;
+  }
+  .filter-select {
+    width: 50%;
+  }
+  .items-container{
+    padding-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    border-radius: 0px;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: #eee;
+    box-shadow: 0 8px 8px -4px black;
+  }
+  .modal-box {
+    width: 70%;
+    height: 60%;
+    overflow: scroll;
+  }
+  .textfield-container {
+    height: 90px;
+    width: 100%;
+  }
+  .logo {
+    height: 30%;
+  }
+  .header-nav-container {
+    flex-direction: column;
+  }
+  .filter-container {
+    width: 100%;
+    padding-right: 0;
+    height: 65%;
+    padding-bottom: 10px;
+  }
+  .filter-select {
+    width: 50%;
+  }
+  .items-container {
+    padding-top: 30px;
+  }
+}
